@@ -1,0 +1,28 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --rtc--main: #000000;
+  --rtc--secondary: #ececec;
+  --rtc--visit: #f32828;
+
+  --rtc--padding-s: 5px;
+  --rtc--padding-m: 10px;
+  --rtc--padding-l: 15px;
+  --rtc--padding-xl: 20px;
+
+  --rtc--margin-s: 5px;
+  --rtc--margin-m: 10px;
+  --rtc--margin-l: 15px;
+  --rtc--margin-xl: 20px;
+}
+* {
+  a {
+    text-decoration: none;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+
+  margin: 0px;
+}

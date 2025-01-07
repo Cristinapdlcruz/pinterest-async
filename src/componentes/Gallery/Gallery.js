@@ -12,6 +12,16 @@ const galleryTemplate = () => {
 const printItems = (items) => {
   const gallery = document.querySelector('.gallery')
   gallery.innerHTML = ''
+
+  if (items.length === 0) {
+    gallery.innerHTML =
+      '<p>No se han encontrado imágenes. Mostrando resultados de "gatos".</p>'
+    searchPhotos('gatos').then((res) => {
+      printItems(res.response.results)
+    })
+    return
+  }
+
   for (const item of items) {
     gallery.innerHTML += cardTemplate(item)
   }

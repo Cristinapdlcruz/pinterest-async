@@ -8,6 +8,7 @@
   height: auto;
   width: auto;
   background-size: cover;
+  background-position: center;
   border-radius: 2rem;
   overflow: hidden;
 }

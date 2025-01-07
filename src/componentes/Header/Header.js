@@ -7,6 +7,11 @@ export const header = () => {
   logo.src = new URL('../Header/Header_img/logo.png', import.meta.url)
   logo.alt = 'Logo'
   logo.className = 'pinterest'
+
+  logo.addEventListener('click', () => {
+    printGallery()
+  })
+
   headerHTML.append(logo)
 
   const nav = document.createElement('nav')
